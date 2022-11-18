@@ -1,0 +1,9 @@
+<div>Input:</div>
+<input type="text" id="input" #input />
+<!-- <button (click)="add(input)">Add</button> -->
+<hr />
+
+Data recieved from observable: <button (click)="clear(input)">Clear</button>
+<ol>
+  <li *ngFor="let item of data">{{ item }}</li>
+</ol>

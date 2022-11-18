@@ -1,0 +1,12 @@
+<div>Adding data to instance of <strong> MyObservable</strong>:</div>
+<input type="text" #input />
+<button (click)="add(input)">Add</button>
+<hr />
+
+Data recieved from the Observable:
+<button *ngIf="subscription" (click)="unsubscribe()">Unsubscribe</button>
+<button *ngIf="!subscription" (click)="subscribe()">Subscribe Again</button>
+
+<ol>
+  <li *ngFor="let item of data">{{ item }}</li>
+</ol>
